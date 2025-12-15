@@ -1,0 +1,218 @@
+🧠 PROYECTO 7 — Análisis de Sentimientos (NLP)
+
+Rol: Tú programas · Yo guío, explico y hago preguntas clave
+Objetivo final: Un modelo funcional + README profesional + base sólida de NLP
+
+1️⃣ Visión general del proyecto (para que sepas por qué haces cada cosa)
+🎯 Problema a resolver
+
+Dado un texto (reseña, comentario, tweet), el sistema debe decir:
+
+positivo
+
+negativo
+
+neutral (opcional al inicio)
+
+💼 ¿Por qué esto sirve laboralmente?
+
+Este proyecto demuestra que sabes:
+
+Procesar texto real (no datos limpios)
+
+Entrenar modelos ML aplicados a negocio
+
+Evaluar resultados
+
+Pensar en escalabilidad (dashboard, API, redes sociales)
+
+2️⃣ Roadmap general (sin código)
+🟢 FASE 1 — Fundamentos NLP + ML clásico
+
+Aquí se construye la base real
+
+Conseguir dataset
+
+Explorar los datos
+
+Limpiar texto
+
+Convertir texto en números
+
+Entrenar modelo
+
+Evaluar resultados
+
+👉 Si dominas esta fase, ya eres ML junior real
+
+🟡 FASE 2 — Mejora del modelo
+
+Ajustar hiperparámetros
+
+Comparar modelos
+
+Mejorar limpieza de texto
+
+🔴 FASE 3 — Nivel profesional
+
+Modelo deep learning (BERT)
+
+Visualización (dashboard)
+
+Predicciones en tiempo real
+
+Por ahora nos quedamos en FASE 1.
+
+3️⃣ Inicialización del proyecto (estructura)
+
+Quiero que empieces como lo haría un equipo real.
+
+📂 Estructura inicial (créala tú)
+sentiment_analysis/
+│── data/
+│   ├── raw/
+│   ├── processed/
+│── src/
+│   ├── __init__.py
+│   ├── preprocess.py
+│   ├── train.py
+│   ├── evaluate.py
+│── notebooks/
+│── README.md
+│── requirements.txt
+
+🧠 Qué aprendes aquí
+
+Organización profesional
+
+Separación de responsabilidades
+
+Escalabilidad
+
+❓ Pregunta tutor:
+¿Por qué crees que separamos raw y processed?
+(Piénsalo antes de seguir)
+
+4️⃣ Dataset (tu primera decisión importante)
+Opciones recomendadas
+
+Reviews de Amazon
+
+IMDb reviews
+
+Tweets (sentiment140)
+
+👉 Empieza SOLO con positivo / negativo
+
+🧠 Qué debes analizar
+
+Antes de entrenar nada, pregúntate:
+
+¿Qué columnas tiene el dataset?
+
+¿Dónde está el texto?
+
+¿Dónde está la etiqueta?
+
+¿Está balanceado?
+
+📌 Pista:
+Haz una exploración básica:
+
+cantidad de textos
+
+longitud promedio
+
+distribución de clases
+
+5️⃣ Limpieza de texto (preprocess.py)
+
+Aquí está uno de los puntos más importantes del proyecto.
+
+🎯 Objetivo
+
+Transformar texto humano → texto útil para ML
+
+🧠 Qué debes aprender
+
+Qué ruido afecta al modelo
+
+Qué información es valiosa
+
+🔍 Pistas de limpieza (no código)
+
+Pregúntate si deberías:
+
+Pasar todo a minúsculas
+
+Eliminar signos de puntuación
+
+Eliminar números
+
+Eliminar stopwords
+
+Hacer stemming o lemmatization
+
+⚠️ Advertencia real:
+Más limpieza ≠ mejor modelo siempre.
+
+❓ Pregunta tutor:
+¿Crees que eliminar palabras como “no”, “nunca”, “jamás” es buena idea en sentimiento? ¿Por qué?
+
+6️⃣ Vectorización (texto → números)
+
+El modelo NO entiende texto, solo números.
+
+Técnicas que debes investigar
+
+Bag of Words
+
+TF-IDF
+
+🧠 Qué debes entender (clave)
+
+¿Qué representa cada número?
+
+¿Por qué TF-IDF suele funcionar mejor?
+
+¿Qué pasa si el vocabulario es enorme?
+
+📌 Pista práctica:
+Empieza con TF-IDF y limita el número de features.
+
+7️⃣ Entrenamiento del modelo (train.py)
+Modelos recomendados (elige uno primero)
+
+Logistic Regression
+
+Naive Bayes
+
+🧠 Qué debes aprender aquí
+
+Separar train/test
+
+Overfitting
+
+Accuracy vs realidad
+
+❓ Pregunta tutor:
+Si tu modelo tiene 90% accuracy, ¿eso siempre significa que es bueno?
+
+8️⃣ Evaluación real (evaluate.py)
+
+Aquí muchos principiantes fallan.
+
+Métricas importantes
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+Confusion Matrix
+
+📌 Pista:
+En análisis de sentimientos, precision y recall suelen ser más importantes que accuracy.
